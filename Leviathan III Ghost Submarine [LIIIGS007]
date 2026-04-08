@@ -1,0 +1,116 @@
+####Readme.md####
+
+a amazing high value Submarine with a wide range of master Capabilities and Emergency Utility Equipment and attachments with artificial intelligence software. Powered By StrawberryFi utility token 
+
+
+
+"""
+Project: LEVIATHAN SUBMARINE (Multi-Medium Autonomous Dreadnought)
+Version: 2.0.0 "Evolution"
+Integrations: StrawberryFi, Godlawbot, Dracoxus-XRAI
+License: MIT
+"""
+
+import math
+import hashlib
+import random
+
+class LeviathanCore:
+    def __init__(self):
+        # --- INTELLIGENCE & BLOCKCHAIN ---
+        self.ai_matrix = {
+            "core_intelligences": 1000,
+            "aquatic_subroutines": 300000,
+            "judicial_module": "Godlawbot_Crime_ID_v4",
+            "token_bridge": "StrawberryFi_Utility_Ledger"
+        }
+        
+        # --- POWER & ELEMENTAL HARVESTING ---
+        self.energy_grid = {
+            "solar_intake": "High-Efficiency Photovoltaic Hull",
+            "chemical_extraction": "Ocean-Earth Electrolyte Converter",
+            "crystal_core": "Gold-Quartz Piezoelectric Buffer",
+            "elemental_drive": "Hydrogen-Isotope Fusion"
+        }
+
+        # --- TERRESTRIAL & SPACE HARDWARE ---
+        self.mobility = {
+            "marine": "Hydro-Jet Propulsion",
+            "land": "Internal Automated Tire Deployment",
+            "space": "Ion Thrusters & Vacuum Seals",
+            "drilling": "10-Prone Industrial Tungsten Drills"
+        }
+
+        # --- DEFENSE & TACTICAL RADAR ---
+        self.tactical_arrays = {
+            "radar_radius_miles": 500,
+            "mine_detection": "Acoustic Resonance Imaging",
+            "drone_suppression": "Microwave Interdiction Swarm",
+            "offensive": "Magnetic Mine Dispenser (Auto-Attach)"
+        }
+
+    # --- PRIMARY SUBROUTINES ---
+
+    def engage_terrestrial_mode(self):
+        """Transition logic for land travel."""
+        print("[LEVIATHAN] Rolling out tires from internal bays. Calibrating for Earth-surface friction.")
+        return "Terrestrial Mode: ACTIVE"
+
+    def run_godlaw_scan(self):
+        """Crime identification and enemy tech flagging."""
+        print("[LEVIATHAN] Godlawbot analyzing local signals... Scanning for enemy tech signatures.")
+        # Simulating AI identification logic
+        return "Threat Assessment: 0% - All surrounding technology identified as non-hostile."
+
+    def activate_life_support(self):
+        """100-day oxygen and gardening station management."""
+        print("[LEVIATHAN] Activating UV-Gardening Station. Oxygenating via Plant-Wall Ecosystem.")
+        self.oxygen_status = "100% - Sustainable"
+
+    def deploy_emergency_capsules(self):
+        """Ejection of 4ft-submerged stealth survival pods."""
+        print("[LEVIATHAN] Deploying Rejection Capsules. Setting depth to 4ft for stealth coverage.")
+        return "Escape Pods: DEPLOYED/HIDDEN"
+
+# --- EVOLUTIONARY ENHANCEMENTS (The "Leviathan" Edge) ---
+
+    def molecular_hull_regeneration(self):
+        """
+        ENHANCEMENT: Uses the 50,000 aquatic capabilities to 'heal' the hull.
+        Nanobots harvest minerals from seawater to repair scratches or damage.
+        """
+        print("[EVOLUTION] Nanobots synthesizing minerals. Hull integrity at 100%.")
+
+    def ghost_mode_vpn(self):
+        """
+        ENHANCEMENT: Combined Antimalware and VPN.
+        Bounces the submarine's GPS location across 50 satellites to prevent tracking.
+        """
+        print("[SECURITY] VPN Tunneling active. Leviathan is now a 'Ghost' on all global radars.")
+
+    def dracoxus_vision_sync(self):
+        """
+        ENHANCEMENT: Dracoxus-XRAI visual enhancement.
+        Allows the crew to see through solid rock or deep silt using X-Ray imaging.
+        """
+        print("[VISION] Dracoxus-XRAI synced. Deep-earth and Deep-water visibility enabled.")
+
+# --- EXECUTION ---
+
+if __name__ == "__main__":
+    # Wake up the Leviathan
+    leviathan = LeviathanCore()
+    
+    print("==========================================")
+    print("      LEVIATHAN SUBMARINE ONLINE          ")
+    print("==========================================")
+    
+    # Run a full system check
+    leviathan.activate_life_support()
+    leviathan.molecular_hull_regeneration()
+    leviathan.run_godlaw_scan()
+    leviathan.ghost_mode_vpn()
+    
+    print("\n[STATUS] All 300,000 Aquatic Softwares operational.")
+    print("[STATUS] StrawberryFi Ledger synced for secure transactions.")
+    print("==========================================")
