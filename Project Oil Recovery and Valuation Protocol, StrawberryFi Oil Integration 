@@ -1,0 +1,58 @@
+#####Readme.md##### 
+
+A technology System that generates value from Oil Sitting bound in earth and Recycled oil 
+
+
+# Project 050: Infrastructure & Resource Recovery
+# Module: Hydrocarbon_Recycle_Protocol
+# Integration: StrawberryFi ($SFi) Utility Layer
+
+class HydrocarbonRecovery:
+    def __init__(self, node_id, location_coords):
+        self.node_id = node_id
+        self.location = location_coords
+        self.remediation_status = "Inactive"
+        self.collected_volume_liters = 0.0
+
+    def detect_leakage_density(self, soil_sensor_data):
+        """
+        Analyzes sensor input for hydrocarbon concentration loopholes.
+        Targeting: Urban runoff, garage leakages, and historical seepage.
+        """
+        concentration = soil_sensor_data.get('ppm_hydrocarbons', 0)
+        if concentration > 500: # Threshold for viable recovery
+            self.remediation_status = "Active"
+            return True
+        return False
+
+    def process_bioremediation(self, duration_hours):
+        """
+        Logic for mycelium-based or chemical conversion of recycled oil.
+        Bypasses traditional refinery infrastructure for wartime resilience.
+        """
+        if self.remediation_status == "Active":
+            # Simulation of oil-to-energy conversion rate
+            recovered = duration_hours * 1.25 
+            self.collected_volume_liters += recovered
+            return f"Processed {recovered}L of recovered energy."
+
+    def mint_sfi_value(self):
+        """
+        Converts recovered environmental waste into StrawberryFi utility value.
+        Creates a 'Clean-up-to-Earn' loop on the StrawberryFi Ledger.
+        """
+        sfi_reward = self.collected_volume_liters * 0.528 # Based on frequency resonance
+        print(f"Minting {sfi_reward} SFi to node {self.node_id}")
+        return sfi_reward
+
+# Unified Command Logic for Project 050
+if __name__ == "__main__":
+    # Example node deployment in North Carolina infrastructure
+    recovery_node = HydrocarbonRecovery(node_id="NC-AC-01", location_coords="35.2155, -78.9669")
+    
+    # Simulate environmental scan
+    if recovery_node.detect_leakage_density({'ppm_hydrocarbons': 1200}):
+        recovery_node.process
+
+
+
